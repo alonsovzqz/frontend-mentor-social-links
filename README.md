@@ -31,8 +31,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-mobilefirst-solution-using-css-grid-and-flexbox-YmY0XAhC8W)
+- Live Site URL: [Vercel](https://frontend-mentor-social-links-pi.vercel.app/)
+- Repo URL: [Github](https://github.com/alonsovzqz/frontend-mentor-social-links)
 
 ## My process
 
