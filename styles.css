@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(./assets/fonts/static/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(./assets/fonts/static/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+  --clr-green: 75, 94%, 57%;
+  --clr-white: 0, 0%, 100%;
+  --clr-grey: 0, 0%, 20%;
+  --clr-dark-grey: 0, 0%, 12%;
+  --clr-off-black: 0, 0%, 8%;
+
+  /* font-sizes */
+  --fs-700: 1.5rem;
+  --fs-200: 0.875rem;
+
+  /* font families */
+  --ff-inter: "Inter", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--ff-inter);
+  font-weight: 400;
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-off-black));
+  line-height: 1.5;
+
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+}
+
+ul {
+  padding-inline: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+li > a {
+  text-decoration: none;
+  color: hsl(var(--clr-white));
+  font-weight: 700;
+  border-radius: 0.5em;
+  background-color: hsl(var(--clr-grey));
+  padding: 0.75em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+li > a:hover,
+li > a:focus {
+  background-color: hsl(var(--clr-green));
+  color: hsl(var(--clr-grey));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.75em;
+  background-color: hsl(var(--clr-dark-grey));
+  padding: 1.5em;
+}
+
+/* general */
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1.5em;
+}
+
+/* colors */
+.text-green {
+  color: hsl(var(--clr-green));
+}
+
+/* typography */
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+/* helpers */
+.full-width {
+  width: 100%;
+}
+
+.img-rounded {
+  width: 5.5rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+/* layout */
+main {
+  --flow-space: 1.5em;
+}
+
+.location {
+  font-weight: 700;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 45em) {
+  main {
+    padding: 2.5em;
+  }
+}
